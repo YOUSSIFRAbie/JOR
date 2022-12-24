@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-ea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    width: 100%;
+    height: 55px;
+    background-color: #eee;
+    position: fixed;
+    z-index: 999;
+}
+nav {
+    padding: 25px;
+}
+.logo {
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #eaddc0;
+    margin: 50px;
+}
+li {
+    list-style-type: none;
+    margin-right: 10px;
+    width: 60px;
+    height: 30px;
+    transition: .2s;
+}
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+nav li:hover {
+    border-bottom: rgb(49, 131, 238) 2px solid;
+    /* border-left: rgb(49, 131, 238) 2px solid; */
+}
+@media (max-width:330px) {
+    li {
+        font-size: 10px;
+        margin-right: 3px;
+    }
+    nav {
+        padding: 15px;
+    }
+}
+@media (max-width:430px) {
+    nav {
+        padding: 25px;
+    }
+    .logo {
+        font-size: 10px;
+        margin: 25px;
+    }
+    li {
+        width: 55px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+}
+/* End header */
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/backSection.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutMe {
+    color: white;
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.aboutMe .spa1 {
+    font-size: 145px;
+}
+.aboutMe .spa2 {
+    font-size: 40px;
+}
+.aboutMe .spa3 {
+    font-size: 100px;
+}
+.aboutMe a {
+    color: white;
+    width: 240px;
+    height: 70px;
+    font-size: 25px;
+    background-color: #0672ff;
+    border-radius: 15px;
+}
+.aboutMe * {
+    margin-left: 20px;
+}
+
+/* End section1 */
+
+.certifecates {
+    width: 100%;
+    height: 235vh;
+    background-color: #0672ff;
+}
+.certife1,
+.certife2,
+.certife3 {
+    height: calc(200vh/3-40px);
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.certife1 img,
+.certife2 img,
+.certife3 img {
+    margin-top: 10px;
+    width: 40%;
+}
+@media (max-width:300px) {
+    .certifecates {
+        height: 200vh;
+    }
+}
+@media (max-width:950px) {
+    .certifecates {
+        height: 475vh;
+    }
+    .certife1,
+    .certife2,
+    .certife3 {
+        flex-direction: column;
+    }
+    .certife1 img,
+    .certife2 img,
+    .certife3 img {
+        width: 80%;
+    }
+}
+
+/* End certifecates */
+
+.scills {
+    width: 100%;
+    height: 50vh;
+    background-color: #0672ff;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.cards {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards .card {
+    width: 150px;
+    height: 250px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+@media (max-width:721px) {
+    .scills {
+        height: 100vh;
+    }
+    .cards {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:370px) {
+    .scills {
+        height: 250vh;
+    }
+    .cards {
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+/* End scills */
+
+.contact {
+    width: 100%;
+    height: 50vh;
+    background-color: #0672ff;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact .contactCard {
+    width: 150px;
+    height: 250px;
+    background-color: #eee;
+    border-radius: 25px;
+}
+.contact .contactCard a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:510px) {
+    .contact {
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+}
+@media (max-width:336px) {
+    .contact {
+        flex-wrap: wrap;
+        height: 130vh;
+        flex-direction: column;
+    }
+}
+/* End contact */
+
+footer {
+    margin-top: 40px;
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: #eee;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:450px) {
+    footer {
+        font-size: 30px;
+    }
+}
+
+/* End footer */
